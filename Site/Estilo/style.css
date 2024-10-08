@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('/fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2:#3ddc84;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: "Bebas Neue", sans-serif;
+    --fonte-android: 'Android', cursive;
+}
+
+
+body{
+    background-color: rgba(43, 244, 154, 0.928);
+}
+h1#titulo-principal{
+    text-align: center;
+}
+h1.titu{
+ color: green;
+ font-family: var(--fonte-destaque);
+}
+p#home{
+    text-align: center;
+}
+header{
+    background-image: linear-gradient(to top, rgb(1, 27, 16), rgb(2, 142, 74), rgb(4, 247, 89));
+    font-family: var(--fonte-destaque);
+    margin: -21px -5px 0px -5px;
+    color: rgba(249, 245, 245, 0.929);
+    padding: 5px;
+}
+nav > a{
+    color: rgba(249, 245, 245, 0.929);
+    margin: 10px 10px 10px 10px;
+}
+main{
+    text-align: center;
+    background-color: snow;
+    width: 1000px;
+    padding: 10px;
+    margin: auto;
+
+}
+section#vid{
+    margin: auto;
+    background-color: rgb(1, 102, 30);;
+    width: 1000px;
+    height: 500px;
+    padding: 20px 0px 20px 0px;
+    
+}
+section#fim{
+    background-color: rgba(96, 204, 127, 0.55);
+    border-radius: 20px;
+    margin: auto;
+}
+h1#extra{
+    background-color: rgb(2, 142, 74);
+    padding: auto;
+    
+}
+p.final{
+    text-align: center;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+    ul {
+        list-style-type: none;
+    }
+    li::before {
+        content: "\2714"; /* Unicode do checkmark */
+        color: green;
+        margin-right: 8px;
+    }
+    aside#um {
+        width: 30%; /* Ajuste conforme necessário */
+    }
+    aside#dois {
+        width: 80%; /* Ajuste conforme necessário */
+    }
+}
+footer{
+    background-color: rgb(1, 41, 1);
+    color: snow;
+    text-align: center;
+    margin: -21px -5px 0px -5px;
+    height: 20px;
+    
+    
+}
