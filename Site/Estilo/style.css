@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Android';
-    src: url('/fontes/idroid.otf') format('opentype');
+    src: url('/Site/fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
@@ -29,13 +29,14 @@
 
 body{
     background-color: rgba(43, 244, 154, 0.928);
+    font-family: var(--fonte-padrao);
 }
 h1#titulo-principal{
     text-align: center;
 }
 h1.titu{
  color: green;
- font-family: var(--fonte-destaque);
+ font-family: var(--fonte-android);
 }
 p#home{
     text-align: center;
@@ -43,15 +44,32 @@ p#home{
 header{
     background-image: linear-gradient(to top, rgb(1, 27, 16), rgb(2, 142, 74), rgb(4, 247, 89));
     font-family: var(--fonte-destaque);
-    /*margin: -21px -5px 0px -5px;*/
+    text-align: center;
     min-height: 150px;
-    color: rgba(249, 245, 245, 0.929);
+    color: snow;
     padding-top: 40px;
 }
-nav > a{
-    color: rgba(249, 245, 245, 0.929);
-    margin: 10px 10px 10px 10px;
+
+nav {
+    color: snow;
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.069);
+    text-align: left;
 }
+
+nav > a{
+    color: snow;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    color: var(--cor1);
+}
+
 main{
     text-align: center;
     background-color: snow;
@@ -76,6 +94,7 @@ section#fim{
 h1#extra{
     background-color: rgb(2, 142, 74);
     padding: auto;
+    font-family: var(--fonte-android);
     
 }
 p.final{
@@ -103,7 +122,8 @@ footer{
     background-color: rgb(1, 41, 1);
     color: snow;
     text-align: center;
-    margin: -21px -5px 0px -5px;
+    padding: 5px;
+    font-size: 0.8em;
     height: 20px;
     
     
