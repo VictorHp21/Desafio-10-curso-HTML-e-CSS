@@ -8,6 +8,11 @@
     font-weight: normal;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -38,9 +43,10 @@ p#home{
 header{
     background-image: linear-gradient(to top, rgb(1, 27, 16), rgb(2, 142, 74), rgb(4, 247, 89));
     font-family: var(--fonte-destaque);
-    margin: -21px -5px 0px -5px;
+    /*margin: -21px -5px 0px -5px;*/
+    min-height: 150px;
     color: rgba(249, 245, 245, 0.929);
-    padding: 5px;
+    padding-top: 40px;
 }
 nav > a{
     color: rgba(249, 245, 245, 0.929);
