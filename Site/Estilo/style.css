@@ -8,6 +8,8 @@
     font-weight: normal;
 }
 
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -107,15 +109,15 @@ article{
         list-style-type: none;
     }
     li::before {
-        content: "\2714"; /* Unicode do checkmark */
+        content: "\2714";
         color: green;
         margin-right: 8px;
     }
     aside#um {
-        width: 30%; /* Ajuste conforme necessário */
+        width: 30%; 
     }
     aside#dois {
-        width: 80%; /* Ajuste conforme necessário */
+        width: 80%; 
     }
 }
 footer{
